@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="-xMPmcxGw_pCfBmiPNr40ZY-X9bRw-8gRMwpd5sDq48" />
+
+    <title>REVICA – Building Digital Worlds</title>
+    <meta name="title" content="REVICA – Building Digital Worlds">
+    <meta name="description"
+        content="Revica is a digital studio crafting immersive web experiences, intelligent systems, and scalable platforms — turning ideas into complete digital worlds.">
+    <!-- <link rel="canonical" href="https://www.revicatech.com/" /> -->
+    <link rel="canonical" href="https://revicatech.com" />
+
+    <link rel="icon" type="image/png" href="assets/global-images/R-logo.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Revica – Building Digital Worlds" />
+    <meta property="og:description" content="Revica is a digital studio crafting immersive web experiences..." />
+    <!-- <meta property="og:url" content="https://www.revicatech.com" /> -->
+    <meta property="og:url" content="https://revicatech.com" />
+    <!-- <meta property="og:image" content="https://www.revicatech.com/assets/global-images/link-image.jpg" /> -->
+    <meta property="og:image" content="https://revicatech.com/assets/global-images/link-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://revicatech.com/" />
+    <!-- <meta name="twitter:url" content="https://www.revicatech.com/" /> -->
+    <meta name="twitter:title" content="Revica – Building Digital Worlds" />
+    <meta name="twitter:description"
+        content="Revica is a digital studio crafting immersive web experiences, intelligent systems, and scalable platforms." />
+    <meta name="twitter:image" content="https://revicatech.com/assets/global-images/link-image.jpg" />
+    <!-- <meta name="twitter:image" content="https://www.revicatech.com/assets/global-images/link-image.jpg" /> -->
+</head>
+
+<body>
+
+    <canvas id="cosmos"></canvas>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <nav class="navbar">
+        <a href="#" class="logo"><img style="width: 30px; margin-left: 10px;" src="assets/global-images/R-logo.png"
+                alt=""></a>
+
+        <div class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#orbit" class="nav-link">Orbit</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#vision" class="nav-link">Vision</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="closeMenu()">✕</div>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#orbit" onclick="closeMenu()">Orbit</a>
+        <a href="#projects" onclick="closeMenu()" class="nav-link">Projects</a>
+        <a href="#pricing" onclick="closeMenu()" class="nav-link">Pricing</a>
+        <a href="#vision" onclick="closeMenu()">Vision</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+
+    <!-- Hero -->
+
+    <section id="hero">
+        <div class="container">
+            <span class="subtitle reveal-text">The Birth of Intelligence</span>
+            <h1 class="display-text reveal-text delay-1">Beyond<br>Algorithm.</h1>
+            <p class="reveal-text delay-2">We are charting the trajectory of digital consciousness. Not just
+                processing
+                data, but understanding the silence between the stars.</p>
+        </div>
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+        <div class="container split-layout">
+            <div class="about-content">
+                <span class="subtitle reveal-text">About Revica</span>
+                <h2 class="display-text reveal-text delay-1" style="font-size: clamp(2rem, 3.5vw, 3.5rem);">From
+                    Stardust to<br>Sentience</h2>
+                <p class="reveal-text delay-2">Founded in the quiet hours, driven by the loud questions. We are a
+                    collective of visionaries, engineers redefining the substrate of AI. We don't just
+                    build code; we cultivate understanding in a vacuum.</p>
+            </div>
+            <div class="cinematic-image-container reveal-text delay-3">
+                <!-- <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" -->
+                <img src="assets/global-images/about.webp"
+                    alt="Abstract data nebula" class="cinematic-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+
+    <section id="services">
+        <div class="container">
+            <span class="subtitle reveal-text" style="justify-content: center;">What We Craft</span>
+            <h2 class="display-text reveal-text delay-1" style="font-size: clamp(2rem, 4vw, 3rem); text-align: center;">
+                Services</h2>
+
+            <div class="grid-cards">
+                <div class="flip-card reveal-text delay-1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                            <span class="card-number">01</span>
+                            <h3>Web Gallery & Landing Pages</h3>
+                            <div class="card-indicator"></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Web Gallery & Landing Pages</h3>
+                            <div class="back-card-indicator"></div>
+
+                            <p>We create modern websites that help your product
+                                stand out, feel professional, and reach a wider audience.</p>
+                            <a href="#contact" class="service-cta">Launch Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card reveal-text delay-1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon"><i class="fa-solid fa-gear"></i></div>
+                            <span class="card-number">02</span>
+                            <h3>Full-Stack Website Development</h3>
+                            <div class="card-indicator"></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3> Full-Stack Website Development</h3>
+                            <div class="back-card-indicator"></div>
+
+                            <p>Complete websites built to support your business,
+                                manage content easily, and grow with your goals.</p>
+                            <a href="#contact" class="service-cta">Launch Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card reveal-text delay-1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                            <span class="card-number">03</span>
+                            <h3>Business Management Systems</h3>
+                            <div class="card-indicator"></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Business Management Systems</h3>
+                            <div class="back-card-indicator"></div>
+
+                            <p>Custom systems that simplify your work,
+                                organize your data, and help your business grow smoothly.</p>
+                            <a href="#contact" class="service-cta">Launch Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card reveal-text delay-1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon"><i class="fa-solid fa-mobile"></i></div>
+                            <span class="card-number">04</span>
+                            <h3>Android App Development</h3>
+                            <div class="card-indicator"></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Android App Development</h3>
+                            <div class="back-card-indicator"></div>
+
+                            <p>Mobile apps that connect your service to users,
+                                making your business accessible anytime, anywhere.</p>
+                            <a href="#contact" class="service-cta">Launch Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card reveal-text delay-1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                            <span class="card-number">05</span>
+                            <h3>UI / UX Design</h3>
+                            <div class="card-indicator"></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>UI / UX Design</h3>
+                            <div class="back-card-indicator"></div>
+
+                            <p>Clean and intuitive design that guides users naturally
+                                and builds trust in your brand from the first interaction.</p>
+                            <a href="#contact" class="service-cta">Launch Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card reveal-text delay-1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <span class="card-number">06</span>
+                            <h3>Website Redesign & Optimization</h3>
+                            <div class="card-indicator"></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Website Redesign & Optimization</h3>
+                            <div class="back-card-indicator"></div>
+
+                            <p>Refreshing your existing website to look better,
+                                work smoother, and reach more people.</p>
+                            <a href="#contact" class="service-cta">Launch Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card reveal-text delay-1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+                            <span class="card-number">07</span>
+                            <h3>Maintenance & Support</h3>
+                            <div class="card-indicator"></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Maintenance & Support</h3>
+                            <div class="back-card-indicator"></div>
+
+                            <p>We keep your website running smoothly,
+                                so you can focus on your business without worry.</p>
+                            <a href="#contact" class="service-cta">Launch Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orbit">
+        <div class="container" style="text-align:center;">
+            <span class="subtitle reveal-text" style="justify-content: center;">REVICA CORE v1.0</span>
+            <h2 class="display-text reveal-text delay-1"
+                style="font-size: clamp(2rem, 4vw, 4rem); margin-bottom: 4rem;">
+                Intelligence<br>In Motion
+            </h2>
+
+            <div class="gyro-container reveal-text delay-2" id="gyro">
+                <div class="gyro-core"></div>
+
+                <div class="gyro-ring ring-1">
+                    <div class="satellite sat-1">
+                        <div class="sat-label">Creativity</div>
+                    </div>
+                </div>
+
+                <div class="gyro-ring ring-2">
+                    <div class="satellite sat-2">
+                        <div class="sat-label">Logic</div>
+                    </div>
+                </div>
+
+                <div class="gyro-ring ring-3">
+                    <div class="satellite sat-3">
+                        <div class="sat-label">Vision</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+        <div class="container">
+            <span class="subtitle reveal-text">Portfolio</span>
+            <h2 class="display-text reveal-text delay-1" style="font-size: clamp(2rem, 4vw, 3rem);">Featured Projects
+            </h2>
+
+            <!-- Project 01: Left Image, Right Content -->
+            <div class="project-card project-left reveal-text">
+                <div class="project-image-container">
+                    <div class="project-image-wrapper">
+                        <img src="assets/projects-images/star-cake.webp" alt="Star Cake" class="project-image">
+                    </div>
+                </div>
+                <div class="project-content-wrapper">
+                    <div class="project-content">
+                        <span class="project-number">🔹 Project 01</span>
+                        <span class="project-category">Web Gallery / Food</span>
+                        <h3 class="project-title">Sweet Shop</h3>
+                        <p class="project-desc">A clean visual gallery designed to present sweets beautifully,
+                            Helping the brand attract attention and leave a memorable impression</p>
+                        <a href="https://starcake.vercel.app/" class="btn-luxury">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 02: Right Image, Left Content -->
+            <div class="project-card project-right reveal-text">
+                <div class="project-content-wrapper">
+                    <div class="project-content">
+                        <span class="project-number">🔹 Project 02</span>
+                        <span class="project-category">Fashion / Clothing</span>
+                        <h3 class="project-title">Forever</h3>
+                        <p class="project-desc">An online fashion store with a shopping cart,
+                            built to showcase collections clearly and turn visitors into customers.</p>
+                        <a href="https://fulle-commerceuser.vercel.app/" class="btn-luxury">Visit Website</a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <div class="project-image-wrapper">
+                        <img src="assets/projects-images/forever.webp" alt="Forever" class="project-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 03: Left Image, Right Content -->
+            <div class="project-card project-left reveal-text">
+                <div class="project-image-container">
+                    <div class="project-image-wrapper">
+                        <img src="assets/projects-images/car-store.webp" alt="Car Store" class="project-image">
+                    </div>
+                </div>
+                <div class="project-content-wrapper">
+                    <div class="project-content">
+                        <span class="project-number">🔹 Project 03</span>
+                        <span class="project-category">Automotive / Retail</span>
+                        <h3 class="project-title">Car Store</h3>
+                        <p class="project-desc">A structured car showcase platform that highlights vehicles clearly,
+                            making it easy for users to explore models and connect with the business.</p>
+                        <a href="https://the-car-store-iota.vercel.app/" class="btn-luxury">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 04: Right Image, Left Content -->
+            <div class="project-card project-right reveal-text">
+                <div class="project-content-wrapper">
+                    <div class="project-content">
+                        <span class="project-number">🔹 Project 04</span>
+                        <span class="project-category">Luxury / Wedding</span>
+                        <h3 class="project-title">Dabbas Fashion – Wedding Veil</h3>
+                        <p class="project-desc">A premium visual experience designed to highlight the elegance and fine
+                            details of wedding veils, targeting a luxury-focused audience.</p>
+                        <a href="https://dabbasfashion.vercel.app/" class="btn-luxury">Visit Website</a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <div class="project-image-wrapper">
+                        <img src="assets/projects-images/dabbas-fashion.webp" alt="Dabbas Fashion" class="project-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <span class="subtitle reveal-text" style="justify-content: center;">Website Plans</span>
+            <h2 class="display-text reveal-text delay-1" style="text-align:center; font-size: clamp(2rem, 4vw, 3rem);">
+                Choose Your Plan</h2>
+
+            <div class="grid-cards pricing-grid">
+                <!-- Standard Card -->
+                <div class="card pricing-card reveal-text delay-1">
+                    <span class="card-number">01</span>
+                    <h3>Standard</h3>
+                    <!-- <div class="price">$100 - $400<span></span></div> -->
+                    <ul class="plan-features">
+                        <li>Home + Contact Pages</li>
+                        <li>Responsive Design</li>
+                        <li>
+                            <div class="ui-details">
+                                <strong style="display: block; margin-bottom: 4px; color: #fff;">UI Options:</strong>
+                                <div class="ui-sub-text">
+                                    <p>• <span style="font-weight: 600;">Basic:</span> Simple, limited colors, 1
+                                        modification</p>
+                                    <p>• <span style="font-weight: 600;">Clean:</span> Modern layout, better spacing &
+                                        fonts, 2 modifications
+                                    </p>
+                                    <p>• <span style="font-weight: 600;">Pro:</span> Advanced sections & cards, light
+                                        animations, 3
+                                        modifications</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Domain & Hosting</li>
+                    </ul>
+                    <a href="#contact" class="btn-luxury">Get Started</a>
+                </div>
+
+                <!-- Plus Card -->
+                <div class="card pricing-card featured reveal-text delay-2">
+                    <span class="card-number" style="color: var(--accent-gold);">02</span>
+                    <h3 style="color: var(--accent-gold);">Plus</h3>
+                    <!-- <div class="price">Starting $600<span></span></div> -->
+                    <ul class="plan-features">
+                        <li>Includes all Standard features</li>
+                        <li>Dashboard</li>
+                        <li>5 Pages (Home, About, Services, Contact + 1 custom)</li>
+                        <li>Custom UI Design & Animations</li>
+                        <li>3 Full Modification Rounds</li>
+                        <li>Basic SEO Optimization</li>
+                        <li>
+                            <h4 style="color: var(--accent-gold); font-weight: 300; margin-bottom: 40px;">Best choice
+                                for growing brands</h4>
+                        </li>
+                    </ul>
+
+
+                    <a href="#contact" class="btn-luxury" style="background: var(--accent-violet);">
+                        Start with Plus
+                    </a>
+                </div>
+
+                <!-- Premium Card -->
+                <div class="card pricing-card reveal-text delay-3">
+                    <span class="card-number">03</span>
+                    <h3>Premium</h3>
+                    <!-- <div class="price">Starting $1200<span></span></div> -->
+                    <ul class="plan-features">
+                        <li>Includes all Plus features</li>
+                        <li>Unlimited Pages</li>
+                        <li>Advanced Dashboard & Multi-Admin Access</li>
+                        <li>Dynamic Content (E-commerce, Blog, User Accounts)</li>
+                        <li>Analytics & Performance Optimization</li>
+                        <li>Professional UI/UX like top companies</li>
+                    </ul>
+                    <a href="#contact" class="btn-luxury">
+                        Plan Your Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Custom Project / Contact CTA -->
+            <div class="custom-contact-card reveal-text delay-4">
+                <h3>CUSTOM PROJECT & DESIGN</h3>
+                <p>For your custom design and project requirements, get in touch with us to create a fully tailored
+                    solution.</p>
+                <a href="#contact" class="btn-luxury">
+                    CONTACT US
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <div class="container">
+            <span class="subtitle reveal-text">Temporal Vision</span>
+            <h2 class="display-text reveal-text delay-1" style="font-size:clamp(2rem,4vw,3.5rem);">
+                Beyond<br>Now
+            </h2>
+
+            <div class="grid-cards">
+                <div class="card reveal-text delay-1">
+                    <span class="card-number">PAST</span>
+                    <p>We questioned systems. We dismantled assumptions.</p>
+                </div>
+                <div class="card reveal-text delay-2">
+                    <span class="card-number">NOW</span>
+                    <p>We build living digital intelligence.</p>
+                </div>
+                <div class="card reveal-text delay-3">
+                    <span class="card-number">FUTURE</span>
+                    <p>We design autonomous ecosystems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+        <div class="container split-layout">
+            <div>
+                <span class="subtitle reveal-text">Initiate Contact</span>
+                <h2 class="display-text reveal-text delay-1">Send Signal</h2>
+                <p class="reveal-text delay-2">Select your preferred transmission frequency below.</p>
+                <p class="contact-detail">
+                    <span class="label">Email:</span> revicatech@gmail.com
+                </p>
+            </div>
+
+            <div class="contact-wrapper reveal-text delay-3" style="width: 100%;">
+                <div class="contact-modes">
+                    <button type="button" class="mode-btn active" data-mode="email">
+                        Email
+                    </button>
+                    <button type="button" class="mode-btn" data-mode="whatsapp">
+                        WhatsApp
+                    </button>
+                </div>
+
+                <form id="contactForm">
+                    <input type="text" id="contactName" placeholder="Designation (Name)" class="minimal-input" required>
+                    <!-- <input type="email" id="contactEmail" placeholder="Frequency (Email)" class="minimal-input"> -->
+                    <textarea id="contactMessage" placeholder="Message" class="minimal-input" required></textarea>
+
+                    <button type="submit" id="submitBtn" class="btn-luxury">TRANSMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/global-images/R-logo.png" style="width: 30px;" alt="">
+                    <h2>REVICA</h2>
+
+                </div>
+                <p>Designing & building modern digital experiences.</p>
+
+                <a href="https://instagram.com/_revica_" target="_blank" class="footer-instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    _revica_
+                </a>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI / UX Design</li>
+                    <li>Custom Systems</li>
+                    <li>Maintenance & Support</li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-contact">
+                <h4>Let’s work together</h4>
+                <p>Start your project with us</p>
+                <a href="#contact" class="btn-luxury">Contact Us</a>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 Revica. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
