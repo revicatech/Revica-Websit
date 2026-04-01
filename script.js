@@ -213,7 +213,7 @@ contactForm.addEventListener('submit', (e) => {
         whatsappMessage += `*Name:* ${encodeURIComponent(name)}%0A`;
         whatsappMessage += `*Message:* ${encodeURIComponent(message)}`;
 
-        window.open(`https://wa.me/934067735?text=${whatsappMessage}`, '_blank');
+        window.open(`https://wa.me/+447916621606?text=${whatsappMessage}`, '_blank');
 
     } else {
         // --- Direct Gmail Logic ---
